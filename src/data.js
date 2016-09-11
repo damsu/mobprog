@@ -25,8 +25,7 @@ var courseData = [{
                 }];
 
 
-var gradeData = [];
-gradeData.id = 0;
+
 
 
 
@@ -98,6 +97,7 @@ exports.addCourse = function (course) {
 //Grades
 exports.getAllGrades = function () {
 
+    var gradeData = [];
     var iteration = 0;
     for (var i = 0; i < studentData.length; i++) {
         for (var j = 0; j < courseData.length; j++) {
