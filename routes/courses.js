@@ -17,6 +17,8 @@ function postNewCourse(req, res, next) {
     res.sendStatus(201);
 }
 
+
+
 //
 // Declare routes
 //
@@ -34,7 +36,7 @@ router.route('/courses/:id')
         res.json(data.removeCourseById(req.params.id));
         res.send("delete course");
     })
-.update(function (req, res, next) {
+.post(function (req, res, next) {
     res.json(data.removeCourseById(req.params.id));
     res.json(data.addCourse(req.body));
 });
