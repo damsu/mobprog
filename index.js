@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 //var books = require('./routes/books.js');
 //var authors = require('./routes/authors.js');
 var students = require('./routes/students.js');
-//var courses = require('./routes/courses.js');
-var grades = require('./routes/grades.js');
+var courses = require('./routes/courses.js');
+//var grades = require('./routes/grades.js');
 var app = express();
 
 // You can store key-value pairs in express, here we store the port setting
