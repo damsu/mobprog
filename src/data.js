@@ -1,7 +1,7 @@
 // Define some student data
 var studentData = [{
                     id: 1,
-                    name: "Michael Köhl",
+                    name: "JSon Derulo",
                     address: "21 Jump Street",
                     group: "DIN22SP"
 },
@@ -34,9 +34,6 @@ for (var i = 0; i < studentData.length; i++) {
         
         gradeData.push({
             id: iteration,
-            //studentID: 0,
-            //courseID: 0,
-            //id: id++,
             student: studentData[i].name,
             course: courseData[j].name,
             grade: 0
