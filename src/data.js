@@ -142,13 +142,13 @@ exports.getAllGradesByStudentId = function (id) {
     });
 }
 
-exports.getGradeById = function (id) {
-    return gradeData.filter(function (grade) {
-        if (grade.id == id) {
-            return grade;
-        }
-    });
-}
+//exports.getGradeById = function (id) {
+//    return gradeData.filter(function (grade) {
+//        if (grade.id == id) {
+//            return grade;
+//        }
+//    });
+//}
 
 exports.addGrade = function (grade) {
     gradeData.push(grade);
