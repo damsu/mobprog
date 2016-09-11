@@ -28,18 +28,18 @@ var courseData = [{
 var gradeData = [];
 //gradeData.id = 0;
 
-for (var i = 0; i < studentData.length; i++) {
-    for (var j = 0; j < courseData.length; j++) {
+//for (var i = 0; i < studentData.length; i++) {
+//    for (var j = 0; j < courseData.length; j++) {
 
-        gradeData.push({
-            id: id++,
-            studentID: studentData.id[i].value,
-            courseID: courseData.id[j].value,
-            grade: 0
-        });
+//        gradeData.push({
+//            id: id++,
+//            studentID: studentData.id[i].value,
+//            courseID: courseData.id[j].value,
+//            grade: 0
+//        });
 
-    }
-}
+//    }
+//}
 
 
 
@@ -112,17 +112,17 @@ exports.getAllGrades = function () {
     return gradeData;
 }
 
-//exports.getGradeById = function (id) {
-//    return gradeData.filter(function (grade) {
-//        if (grade.id == id) {
-//            return grade;
-//        }
-//    });
-//}
+exports.getGradeById = function (id) {
+    return gradeData.filter(function (grade) {
+        if (grade.id == id) {
+            return grade;
+        }
+    });
+}
 
-//exports.addGrade = function (grade) {
-//    gradeData.push(grade);
-//}
+exports.addGrade = function (grade) {
+    gradeData.push(grade);
+}
 
 // Public functions for other modules to use
 //exports.getAllBooks = function() 
