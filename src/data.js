@@ -107,6 +107,15 @@ exports.removeStudentById = function (id) {
     });
 }
 
+exports.updateStudentById = function (id, newcontent) {
+    return studentData.filter(function (student) {
+        if (student.id == id) {
+            studentData.splice(id - 1, 1);
+            studentData.push(newcontent);
+        }
+    });
+}
+
 
 //Courses
 exports.getAllCourses = function () {
@@ -130,6 +139,13 @@ exports.removeCourseById = function(id)
     return courseData.filter(function (course) {
         if (course.id == id) {
             courseData.splice(id - 1, 1);
+        }
+    });
+}
+exports.updateCourseById = function (id, content) {
+    return studentData.filter(function (student) {
+        if (student.id == id) {
+            studentData.push(newcontent);
         }
     });
 }

@@ -17,6 +17,7 @@ function postNewStudent(req, res, next) {
     res.sendStatus(201);
 }
 
+
 //
 // Declare routes
 //
@@ -33,6 +34,10 @@ router.route('/students/:id')
     .delete(function (req, res, next) {
         res.json(data.removeStudentById(req.params.id));
         res.send("delete student");
+    })
+    .update(function (req, res, next) {
+        res.json(data.removeStudentById(req.params.id));
+        res.json(data.addStudent(req.body));
     });
 
 module.exports = router;

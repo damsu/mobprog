@@ -33,6 +33,10 @@ router.route('/courses/:id')
     .delete(function (req, res, next) {
         res.json(data.removeCourseById(req.params.id));
         res.send("delete course");
-    });
+    })
+.update(function (req, res, next) {
+    res.json(data.removeCourseById(req.params.id));
+    res.json(data.addCourse(req.body));
+});
 
 module.exports = router;
