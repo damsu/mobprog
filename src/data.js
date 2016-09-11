@@ -32,7 +32,7 @@ for (var i = 0; i < studentData.length; i++) {
     for (var j = 0; j < courseData.length; j++) {
 
         gradeData.push({
-            id: id + 1,
+            id: i + j,
             //studentID: 0,
             //courseID: 0,
             //id: id++,
