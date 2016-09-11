@@ -31,6 +31,7 @@ router.route('/courses/:id')
         res.json(data.getCourseById(req.params.id));
     })
     .delete(function (req, res, next) {
+        res.json(data.removeCourseById(req.params.id));
         res.send("delete course");
     });
 

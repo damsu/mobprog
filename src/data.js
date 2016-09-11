@@ -99,6 +99,19 @@ exports.addStudent = function (student) {
     studentData.push(student);
 }
 
+exports.removeStudentById = function(id)
+{
+    var ret = null;
+    studentData.forEach(function(student,index){		
+        if(student.id == id)
+        {
+            ret = index;
+        }
+    }
+  );
+  
+    return ret;
+
 
 //Courses
 exports.getAllCourses = function () {
@@ -116,6 +129,19 @@ exports.getCourseById = function (id) {
 exports.addCourse = function (course) {
     courseData.push(course);
 }
+
+exports.removeCourseById = function(id)
+{
+    var ret = null;
+    courseData.forEach(function(course,index){		
+        if(course.id == id)
+        {
+            ret = index;
+        }
+    }
+  );
+  
+    return ret;
 
 //Grades
 //exports.getAllGradesByStudentId = function (id) {
