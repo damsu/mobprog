@@ -26,20 +26,23 @@ var courseData = [{
 
 
 var gradeData = [];
-//gradeData.id = 0;
+gradeData.id = 0;
 
-//for (var i = 0; i < studentData.length; i++) {
-//    for (var j = 0; j < courseData.length; j++) {
+for (var i = 0; i < studentData.length; i++) {
+    for (var j = 0; j < courseData.length; j++) {
 
-//        gradeData.push({
-//            id: id++,
-//            studentID: studentData.id[i].value,
-//            courseID: courseData.id[j].value,
-//            grade: 0
-//        });
+        gradeData.push({
+            id: 0,
+            studentID: 0,
+            courseID: 0,
+            //id: id++,
+            //studentID: studentData.id[i].value,
+            //courseID: courseData.id[j].value,
+            grade: 0
+        });
 
-//    }
-//}
+    }
+}
 
 
 
