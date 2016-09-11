@@ -112,17 +112,17 @@ exports.getAllGrades = function () {
     return gradeData;
 }
 
-exports.getGradeById = function (id) {
-    return gradeData.filter(function (grade) {
-        if (grade.id == id) {
-            return grade;
-        }
-    });
-}
+//exports.getGradeById = function (id) {
+//    return gradeData.filter(function (grade) {
+//        if (grade.id == id) {
+//            return grade;
+//        }
+//    });
+//}
 
-exports.addGrade = function (grade) {
-    gradeData.push(grade);
-}
+//exports.addGrade = function (grade) {
+//    gradeData.push(grade);
+//}
 
 // Public functions for other modules to use
 //exports.getAllBooks = function() 
