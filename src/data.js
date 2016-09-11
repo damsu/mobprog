@@ -129,7 +129,7 @@ exports.removeCourseById = function(id)
 {
     return courseData.filter(function (course) {
         if (course.id == id) {
-            courseData.splice(0, 3);
+            courseData.splice(0, 1);
         }
     });
 }
