@@ -36,8 +36,8 @@ for (var i = 0; i < studentData.length; i++) {
             //studentID: 0,
             //courseID: 0,
             //id: id++,
-            studentID: studentData.id[i].value,
-            courseID: courseData.id[j].value,
+            studentID: studentData[i].id,
+            courseID: courseData[j].id,
             grade: 0
         });
 
