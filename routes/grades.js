@@ -21,15 +21,19 @@ function postNewGrade(req, res, next) {
 // Declare routes
 //
 
-router.route('/grades')
-    .get(getAllGrades)
-    .post(postNewGrade);
-
-router.route('/grades/:id')
+router.route('/students/:id/grades')
     .get(function (req, res, next) {
         // the id parameter is available at req.params        
-        res.json(data.getGradeById(req.params.id));
+        res.json(data.getAllGradesByStudentId(req.params.id));
     })
+    //.get(getAllGrades)
+    .post(postNewGrade);
+
+//router.route('/students/:id/grades/:id')
+//    .get(function (req, res, next) {
+//        // the id parameter is available at req.params        
+//        res.json(data.getGradeById(req.params.id));
+//    })
     .delete(function (req, res, next) {
         res.send("delete grade");
     });

@@ -25,7 +25,30 @@ var courseData = [{
                 }];
 
 
-
+var gradeData = [{
+                    id: 1,
+                    studentId: 1,
+                    courseId: 1,
+                    grade: 2
+},
+                {
+                    id: 2,
+                    studentId: 1,
+                    courseId: 2,
+                    grade: 5
+                },
+                {
+                    id: 3,
+                    studentId: 2,
+                    courseId: 1,
+                    grade: 4
+                },
+                {
+                    id: 4,
+                    studentId: 2,
+                    courseId: 2,
+                    grade: 3
+                }];
 
 
 
@@ -95,25 +118,28 @@ exports.addCourse = function (course) {
 }
 
 //Grades
-exports.getAllGrades = function () {
+exports.getAllGradesByStudentId = function (id) {
 
-    var gradeData = [];
-    var iteration = 0;
-    for (var i = 0; i < studentData.length; i++) {
-        for (var j = 0; j < courseData.length; j++) {
+    //var gradeData = [];
+    //var iteration = 0;
+    //for (var i = 0; i < studentData.length; i++) {
+    //    for (var j = 0; j < courseData.length; j++) {
 
-            gradeData.push({
-                id: iteration,
-                student_ID: studentData[i].id,
-                course_ID: courseData[j].id,
-                grade: 0
-            });
-            iteration++;
+    //        gradeData.push({
+    //            id: iteration,
+    //            student_ID: studentData[i].id,
+    //            course_ID: courseData[j].id,
+    //            grade: 0
+    //        });
+    //        iteration++;
 
+    //    }
+    //}
+    return gradeData.filter(function (grade) {
+        if (grade.studentId == id) {
+            return grade;
         }
-    }
-
-    return gradeData;
+    });
 }
 
 exports.getGradeById = function (id) {
