@@ -102,7 +102,7 @@ exports.addStudent = function (student) {
 exports.removeStudentById = function (id) {
     return studentData.filter(function (student) {
         if (student.id == id) {
-            studentData.splice(id, 1);
+            studentData.splice(id - 1, 1);
         }
     });
 }
@@ -129,7 +129,7 @@ exports.removeCourseById = function(id)
 {
     return courseData.filter(function (course) {
         if (course.id == id) {
-            courseData.splice(2, 1);
+            courseData.splice(id - 1, 1);
         }
     });
 }
