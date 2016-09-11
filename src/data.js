@@ -27,12 +27,13 @@ var courseData = [{
 
 var gradeData = [];
 gradeData.id = 0;
+var iteration = 0;
 
 for (var i = 0; i < studentData.length; i++) {
     for (var j = 0; j < courseData.length; j++) {
-
+        
         gradeData.push({
-            id: i + j,
+            id: iteration,
             //studentID: 0,
             //courseID: 0,
             //id: id++,
@@ -40,6 +41,7 @@ for (var i = 0; i < studentData.length; i++) {
             course: courseData[j].name,
             grade: 0
         });
+        iteration++;
 
     }
 }
