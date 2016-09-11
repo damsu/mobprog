@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 //var books = require('./routes/books.js');
 //var authors = require('./routes/authors.js');
 var students = require('./routes/students.js');
-var courses = require('./routes/courses.js');
+//var courses = require('./routes/courses.js');
 var grades = require('./routes/grades.js');
 var app = express();
 
@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 //app.use('/api', authors);
 app.use('/api', students);
 app.use('/api', courses);
-app.use('/api', grades);
+//app.use('/api', grades);
 
 // Simple hello world route
 app.get('/', function(req, res) {
