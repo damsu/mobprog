@@ -27,21 +27,7 @@ var courseData = [{
 
 var gradeData = [];
 gradeData.id = 0;
-var iteration = 0;
 
-for (var i = 0; i < studentData.length; i++) {
-    for (var j = 0; j < courseData.length; j++) {
-        
-        gradeData.push({
-            id: iteration,
-            student_ID: studentData[i].id,
-            course_ID: courseData[j].id,
-            grade: 0
-        });
-        iteration++;
-
-    }
-}
 
 
 
@@ -111,6 +97,22 @@ exports.addCourse = function (course) {
 
 //Grades
 exports.getAllGrades = function () {
+
+    var iteration = 0;
+    for (var i = 0; i < studentData.length; i++) {
+        for (var j = 0; j < courseData.length; j++) {
+
+            gradeData.push({
+                id: iteration,
+                student_ID: studentData[i].id,
+                course_ID: courseData[j].id,
+                grade: 0
+            });
+            iteration++;
+
+        }
+    }
+
     return gradeData;
 }
 
