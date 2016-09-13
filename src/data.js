@@ -132,15 +132,21 @@ exports.addCourse = function (course) {
     courseData.push(course);
 }
 
-exports.removeCourseById = function (id) {
-    for (var i = 0, len = courseData.length; i < len; i++) {}
-    return courseData.filter(function (course) {
+exports.removeCourseById = function (id) 
+{
+    for (var i = 0, len = courseData.length; i < len; i++)
+    {
         if (courseData.id == id) {
-            courseData.splice(i, 1);
+            break;
         }
-    });
-
+    }
+        return courseData.filter(function (course)
+        {
+            courseData.splice(i, 1);
+        });
 }
+
+
 
 
 //Grades
