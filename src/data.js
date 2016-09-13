@@ -100,7 +100,7 @@ exports.addStudent = function (student) {
 }
 
 exports.removeStudentById = function (id) {
-    var ret = null;
+    var obj_position = null;
     studentData.forEach(function (student, index) {
         if (student.id == id) {
             obj_position = index;
@@ -110,7 +110,7 @@ exports.removeStudentById = function (id) {
 }
 
 exports.updateStudentById = function (id, newcontent) {
-    var ret = null;
+    var obj_position = null;
     studentData.forEach(function (student, index) {
         if (student.id == id) {
             obj_position = index;
@@ -139,13 +139,24 @@ exports.addCourse = function (course) {
 
 
 exports.removeCourseById = function (id) {
-    var ret = null;
+    var obj_position = null;
     courseData.forEach(function (course, index) {
         if (course.id == id) {
             obj_position = index;
         }
     });
     courseData.splice(obj_position, 1);
+}
+
+exports.updateCourseById = function (id, newcontent) {
+    var obj_position = null;
+    courseData.forEach(function (course, index) {
+        if (course.id == id) {
+            obj_position = index;
+        }
+    });
+    courseData.splice(obj_position, 1);
+    courseData.splice(obj_position, 1, newcontent);
 }
 
 

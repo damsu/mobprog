@@ -36,7 +36,6 @@ router.route('/students/:id')
         res.send("delete student");
     })
     .put(function (req, res, next) {
-        //res.json(data.removeStudentById(req.params.id));
         res.json(data.updateStudentById(req.params.id, req.body));
     });
 
