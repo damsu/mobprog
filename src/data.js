@@ -107,13 +107,13 @@ exports.removeStudentById = function (id) {
     });
 }
 
-exports.updateStudentById = function (id, content) {
-    return studentData.filter(function (student) {
-        if (student.id == id) {
-            studentData.splice(id - 1, 1, content);
-        }
-    });
-}
+//exports.updateStudentById = function (id, content) {
+//    return studentData.filter(function (student) {
+//        if (student.id == id) {
+//            studentData.splice(id - 1, 1, content);
+//        }
+//    });
+//}
 
 //Courses
 exports.getAllCourses = function () {
@@ -132,14 +132,15 @@ exports.addCourse = function (course) {
     courseData.push(course);
 }
 
-exports.removeCourseById = function(id)
-{
-    return courseData.filter(function (course) {
-        if (course.id == id) {
-            courseData.splice(id - 1, 1);
+exports.removeCourseById = function (id) {
+    for (var i = 0, len = courseData.length; i < len; i++) {
+        //return courseData.filter(function (course) {
+        if (courseData.id == id) {
+            courseData.splice(i, 1);
         }
-    });
-}
+    }
+
+};
 
 
 //Grades
