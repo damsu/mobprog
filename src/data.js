@@ -133,14 +133,14 @@ exports.addCourse = function (course) {
 }
 
 exports.removeCourseById = function (id) {
-    for (var i = 0, len = courseData.length; i < len; i++) {
-        //return courseData.filter(function (course) {
+    for (var i = 0, len = courseData.length; i < len; i++) {}
+    return courseData.filter(function (course) {
         if (courseData.id == id) {
             courseData.splice(i, 1);
         }
-    }
+    });
 
-};
+}
 
 
 //Grades
