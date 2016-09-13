@@ -100,11 +100,13 @@ exports.addStudent = function (student) {
 }
 
 exports.removeStudentById = function (id) {
-    return studentData.filter(function (student) {
+    var ret = null;
+    studentData.forEach(function (student, index) {
         if (student.id == id) {
-            studentData.splice(id - 1, 1);
+            ret = index;
         }
     });
+    studentData.splice(ret, 1);
 }
 
 //exports.updateStudentById = function (id, content) {
@@ -132,24 +134,6 @@ exports.addCourse = function (course) {
     courseData.push(course);
 }
 
-//exports.removeCourseById = function (id) 
-//{
-//    for (var i = 0, len = courseData.length; i < len; i++)
-//    {
-//        return courseData.filter(function (course)
-//        {
-//            if (course.id == id)
-//            {
-                
-//            }
-//            courseData.splice(i, 1);
-//        });
-//        if (courseData.id == id) {
-//            break;
-//        }
-//    }
-
-//}
 
 exports.removeCourseById = function (id) {
     var ret = null;
@@ -159,7 +143,6 @@ exports.removeCourseById = function (id) {
         }
     });
     courseData.splice(ret, 1);
-    //return ret;
 }
 
 
