@@ -37,7 +37,7 @@ router.route('/students/:id')
     })
     .put(function (req, res, next) {
         //res.json(data.removeStudentById(req.params.id));
-        res.json(data.updateStudentById(req.body));
+        res.json(data.updateStudentById(req.params.id, req.body));
     });
 
 module.exports = router;

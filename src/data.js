@@ -103,19 +103,22 @@ exports.removeStudentById = function (id) {
     var ret = null;
     studentData.forEach(function (student, index) {
         if (student.id == id) {
-            ret = index;
+            obj_position = index;
         }
     });
-    studentData.splice(ret, 1);
+    studentData.splice(obj_position, 1);
 }
 
-//exports.updateStudentById = function (id, content) {
-//    return studentData.filter(function (student) {
-//        if (student.id == id) {
-//            studentData.splice(id - 1, 1, content);
-//        }
-//    });
-//}
+exports.updateStudentById = function (id, newcontent) {
+    var ret = null;
+    studentData.forEach(function (student, index) {
+        if (student.id == id) {
+            obj_position = index;
+        }
+    });
+    studentData.splice(obj_position, 1);
+    studentData.splice(obj_position, 1, newcontent);
+}
 
 //Courses
 exports.getAllCourses = function () {
@@ -139,10 +142,10 @@ exports.removeCourseById = function (id) {
     var ret = null;
     courseData.forEach(function (course, index) {
         if (course.id == id) {
-            ret = index;
+            obj_position = index;
         }
     });
-    courseData.splice(ret, 1);
+    courseData.splice(obj_position, 1);
 }
 
 
