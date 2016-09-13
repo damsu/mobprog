@@ -132,20 +132,35 @@ exports.addCourse = function (course) {
     courseData.push(course);
 }
 
-exports.removeCourseById = function (id) 
-{
-    for (var i = 0, len = courseData.length; i < len; i++)
-    {
-        if (courseData.id == id) {
-            break;
-        }
-    }
-        return courseData.filter(function (course)
-        {
-            courseData.splice(i, 1);
-        });
-}
+//exports.removeCourseById = function (id) 
+//{
+//    for (var i = 0, len = courseData.length; i < len; i++)
+//    {
+//        return courseData.filter(function (course)
+//        {
+//            if (course.id == id)
+//            {
+                
+//            }
+//            courseData.splice(i, 1);
+//        });
+//        if (courseData.id == id) {
+//            break;
+//        }
+//    }
 
+//}
+
+exports.removeCourseById = function (id) {
+    var ret = null;
+    courseData.forEach(function (course, index) {
+        if (course.id == id) {
+            ret = index;
+        }
+    });
+    courseData.splice(ret, 1);
+    //return ret;
+}
 
 
 
