@@ -8,6 +8,7 @@ var router = express.Router();
 
 function getAllStudents(req, res, next) {
     res.json(data.getAllStudents());
+    res.send(data.getAllStudents());
 }
 
 function postNewStudent(req, res, next) {
@@ -30,6 +31,7 @@ router.route('/students/:id')
     .get(function (req, res, next) {
         // the id parameter is available at req.params        
         res.json(data.getStudentById(req.params.id));
+        res.send(data.getStudentById(req.params.id));
     })
     .delete(function (req, res, next) {
         res.json(data.removeStudentById(req.params.id));
@@ -37,6 +39,7 @@ router.route('/students/:id')
     })
     .put(function (req, res, next) {
         res.json(data.updateStudentById(req.params.id, req.body));
+        res.send("update student");
     });
 
 module.exports = router;
