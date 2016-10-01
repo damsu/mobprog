@@ -17,7 +17,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'You on your way?',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'http://wac.450f.edgecastcdn.net/80450F/tri1025.com/files/2013/05/normal_me1.jpg',
         likes: 3
     }, {
@@ -33,7 +33,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'I should buy a boat',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'https://s-media-cache-ak0.pinimg.com/736x/1e/93/28/1e9328a87eb6654e3a290645a9620c9d.jpg',
         likes: 5
     }, {
@@ -41,7 +41,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'Look at my mukluks!',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'http://4.bp.blogspot.com/-F_6SfcFHKRE/UIjJKWfbt8I/AAAAAAAAA6w/AK5H_oGl9io/s1600/nature182.jpg',
         likes: 63
     }, {
@@ -65,7 +65,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'This is wicked good ice cream.',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'http://thetechpanda.com/wp-content/uploads/2012/07/instagram.jpg',
         likes: 11
     }, {
@@ -81,7 +81,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'This is wicked good ice cream.',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'http://cdn.rsvlts.com/wp-content/uploads/2014/01/48.-Bruno-Mars.jpg',
         likes: 11
     }, {
@@ -89,7 +89,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'This is wicked good ice cream.',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'http://thestylespy.com/wp/wp-content/uploads/3ee47de07e0711e3bbf50e7e7eef1a38_7.jpg',
         likes: 11
     }, {
@@ -105,7 +105,7 @@ var studentData = [{
         username: 'Ben Sparrow',
         userId: 0,
         comments: 'This is wicked good ice cream.',
-        face: 'img/ben.png',
+        face: 'http://kurld.com/images/wallpapers/profile-pictures/profile-pictures-14.jpg',
         pic: 'http://data.whicdn.com/images/63547742/large.jpg',
         likes: 11
     }, {
